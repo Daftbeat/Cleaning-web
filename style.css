@@ -227,6 +227,7 @@ img {
 
 .hero-copy p {
   font-size: 1.15rem;
+  color: #ffffff;
 }
 
 .hero-points li::marker {
@@ -263,6 +264,10 @@ img {
 .feature-grid p,
 .info-box p {
   color: var(--muted);
+}
+
+.hero-copy p {
+  color: #ffffff;
 }
 
 .cta-group {
