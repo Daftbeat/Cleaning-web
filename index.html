@@ -1,16 +1,37 @@
-Reemplaza todo el contenido de `index.html` por este:
-
-````html
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ANGEL CLEAN AGENCY | Professional Cleaning Services</title>
+    <title>Professional Cleaning Services in La Jolla | ANGEL CLEAN AGENCY</title>
     <meta
       name="description"
-      content="Professional residential and commercial cleaning services in La Jolla and surrounding areas."
+      content="Professional residential, commercial, deep, and move-in cleaning services in La Jolla and surrounding areas. Bilingual service available."
     />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://angelcleanagency.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ANGEL CLEAN AGENCY" />
+    <meta property="og:url" content="https://angelcleanagency.com/" />
+    <meta
+      property="og:title"
+      content="Professional Cleaning Services in La Jolla | ANGEL CLEAN AGENCY"
+    />
+    <meta
+      property="og:description"
+      content="Reliable professional cleaning services for homes and businesses in La Jolla and surrounding areas."
+    />
+    <meta property="og:image" content="Media/Living%20room%20wallpaper.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Professional Cleaning Services in La Jolla | ANGEL CLEAN AGENCY"
+    />
+    <meta
+      name="twitter:description"
+      content="Reliable professional cleaning services for homes and businesses in La Jolla and surrounding areas."
+    />
+    <meta name="twitter:image" content="Media/Living%20room%20wallpaper.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,6 +39,40 @@ Reemplaza todo el contenido de `index.html` por este:
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://angelcleanagency.com/#angel-clean-agency",
+        "url": "https://angelcleanagency.com/",
+        "name": "ANGEL CLEAN AGENCY",
+        "image": "https://angelcleanagency.com/Media/LogoACA.jpg",
+        "telephone": "+1-619-606-0048",
+        "email": "AngelCleanAgency@gmail.com",
+        "description": "Professional residential, commercial, deep, and move-in cleaning services in La Jolla and surrounding areas.",
+        "areaServed": "La Jolla and surrounding areas",
+        "serviceType": [
+          "Residential cleaning",
+          "Commercial cleaning",
+          "Deep cleaning",
+          "Move-In / Move-Out Cleaning",
+          "Recurring service"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -28,6 +83,8 @@ Reemplaza todo el contenido de `index.html` por este:
             class="brand-logo"
             src="Media/LogoACA.jpg"
             alt="ANGEL CLEAN AGENCY logo"
+            width="200"
+            height="75"
           />
         </a>
 
@@ -52,38 +109,23 @@ Reemplaza todo el contenido de `index.html` por este:
         <div class="container hero-grid">
           <div class="hero-copy">
             <span class="eyebrow">Serving La Jolla &amp; surrounding areas</span>
-            <h1>Your space spotless, without the hassle.</h1>
+            <h1>Professional cleaning services in La Jolla</h1>
             <p>
               Professional cleaning services for homes and businesses, with
               bilingual service in English and Spanish.
             </p>
 
+            <ul class="hero-points">
+              <li>Reliable</li>
+              <li>·</li>
+              <li>Detailed</li>
+              <li>·</li>
+              <li>Trusted</li>
+            </ul>
+
             <div class="cta-group">
               <a class="btn btn-primary" href="#contacto">Request a quote</a>
               <a class="btn btn-secondary" href="#servicios">View services</a>
-            </div>
-
-            <ul class="hero-points">
-              <li>Flexible scheduling</li>
-              <li>Bilingual service</li>
-              <li>Personalized quotes</li>
-            </ul>
-          </div>
-
-          <div class="hero-card" aria-label="Service summary">
-            <div class="card-badge">Request a quote today</div>
-            <h2>Personalized pricing</h2>
-            <p>Flexible cleaning packages for homes and businesses.</p>
-
-            <div class="mini-list">
-              <div>
-                <strong>Home</strong>
-                <span>Residential cleaning</span>
-              </div>
-              <div>
-                <strong>Business</strong>
-                <span>Commercial cleaning</span>
-              </div>
             </div>
           </div>
         </div>
@@ -119,45 +161,37 @@ Reemplaza todo el contenido de `index.html` por este:
           </div>
 
           <div class="service-grid">
-            <article class="service-card">
-              <div class="service-icon">🏠</div>
-              <h3>Deep cleaning</h3>
-              <p>
-                Bathrooms, kitchens, bedrooms, and common areas cleaned with
-                care.
-              </p>
-            </article>
 
-            <article class="service-card">
+            <a class="service-card" href="#contacto" data-service="Deep cleaning">
+              <div class="service-icon">🧽</div>
+              <h3>Deep cleaning</h3>
+              <p>Detailed cleaning for your entire space.</p>
+            </a>
+
+            <a class="service-card" href="#contacto" data-service="Move-In / Move-Out Cleaning">
               <div class="service-icon">📦</div>
               <h3>Move-In / Move-Out Cleaning</h3>
-              <p>
-                Detailed cleaning for moving into or leaving a property.
-              </p>
-            </article>
+              <p>Cleaning before or after moving.</p>
+            </a>
 
-            <article class="service-card">
-              <div class="service-icon">🧽</div>
-              <h3>Detail Home Care</h3>
-              <p>Specialized attention to every corner of your home.</p>
-            </article>
+            <a class="service-card" href="#contacto" data-service="Residential cleaning">
+              <div class="service-icon">🏠</div>
+              <h3>Detailed home care</h3>
+              <p>Comprehensive cleaning services for your home.</p>
+            </a>
 
-            <article class="service-card">
-              <div class="service-icon">✨</div>
-              <h3>Recurring service</h3>
-              <p>
-                Flexible plans to keep your home or business consistently
-                clean.
-              </p>
-            </article>
-
-            <article class="service-card">
+            <a class="service-card" href="#contacto" data-service="Commercial cleaning">
               <div class="service-icon">🏢</div>
               <h3>Commercial cleaning</h3>
-              <p>
-                Cleaning solutions for offices, workspaces, and businesses.
-              </p>
-            </article>
+              <p>Professional cleaning for offices and businesses.</p>
+            </a>
+
+            <a class="service-card" href="#contacto" data-service="Recurring service">
+              <div class="service-icon">✨</div>
+              <h3>Recurring service</h3>
+              <p>Reliable cleaning plans for a consistently fresh space.</p>
+            </a>
+
           </div>
         </div>
       </section>
@@ -283,6 +317,8 @@ Reemplaza todo el contenido de `index.html` por este:
               <button type="submit" class="btn btn-primary">Send email</button>
             </form>
 
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+
             <div class="whatsapp-divider" aria-hidden="true">
               <span>or send us a message directly</span>
             </div>
@@ -317,4 +353,3 @@ Reemplaza todo el contenido de `index.html` por este:
     <script src="script.js"></script>
   </body>
 </html>
-````
