@@ -71,19 +71,21 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 82px;
-  gap: 24px;
+  min-height: 48px;
+  gap: 10px;
+  padding: 4px 0;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  flex-shrink: 0;
+  gap: 8px;
 }
 
 .brand-logo {
-  width: 200px;
-  height: 75px;
+  width: 120px;
+  height: 42px;
   object-fit: contain;
   border-radius: 4px;
   border: 2px solid rgba(31, 142, 241, 0.35);
@@ -100,14 +102,16 @@ img {
 .nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  justify-content: center;
+  gap: 8px 12px;
   font-weight: 500;
+  flex: 1;
 }
 
 .nav a {
   position: relative;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.7rem;
   letter-spacing: 0.02em;
   transition: color 0.2s ease;
 }
@@ -136,19 +140,57 @@ img {
   transform-origin: left;
 }
 
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(31, 142, 241, 0.08);
+  border: 1px solid rgba(31, 142, 241, 0.15);
+  flex-shrink: 0;
+}
+
+.lang-btn {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 5px 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.lang-btn:hover,
+.lang-btn:focus-visible {
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+.lang-btn.is-active {
+  background: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(31, 142, 241, 0.28);
+}
+
 .header-info {
   display: flex;
-  align-items: center;
-  gap: 16px;
-  font-size: 0.92rem;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  font-size: 0.58rem;
   color: var(--text);
   overflow-wrap: anywhere;
+  flex-shrink: 0;
 }
 
 .header-info a {
   position: relative;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.58rem;
   letter-spacing: 0.02em;
   transition: color 0.2s ease;
 }
@@ -469,11 +511,20 @@ img {
   max-width: 520px;
 }
 
+.social-label {
+  margin: 24px 0 12px;
+  color: var(--primary-dark);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
 .socials {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  margin-top: 24px;
+  margin-top: 0;
 }
 
 .socials a {
@@ -601,7 +652,8 @@ img {
   .nav-wrap {
     display: grid;
     grid-template-columns: 1fr auto;
-    padding: 18px 0;
+    gap: 6px 10px;
+    padding: 8px 0;
   }
 
   .nav {
@@ -610,15 +662,19 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px 18px;
+    gap: 4px 10px;
+  }
+
+  .lang-switcher {
+    justify-self: end;
   }
 
   .header-info {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 8px 16px;
-    font-size: 0.84rem;
+    gap: 2px 6px;
+    font-size: 0.62rem;
   }
 
   .hero-grid,
@@ -646,31 +702,42 @@ img {
 
 @media (max-width: 560px) {
   .container {
-    width: min(100% - 24px, 480px);
+    width: min(100% - 16px, 480px);
   }
 
   .nav-wrap {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 8px;
+    padding: 8px 0;
   }
 
   .brand {
     justify-content: center;
   }
 
+  .lang-switcher {
+    justify-self: center;
+  }
+
   .header-info {
     justify-content: center;
+    font-size: 0.62rem;
+    flex-direction: row;
   }
 
   .nav {
     grid-column: auto;
     grid-row: auto;
-    gap: 8px 14px;
-    font-size: 0.92rem;
+    gap: 4px 8px;
+    font-size: 0.7rem;
   }
 
   .hero {
     padding: 34px 0 36px;
+  }
+
+  .hero-copy {
+    padding: 1.5rem 1.1rem;
   }
 
   .hero-copy h1 {
@@ -686,8 +753,24 @@ img {
 
   .feature-grid article,
   .service-card,
-  .contact-form {
-    padding: 22px 18px;
+  .contact-form,
+  .info-box,
+  .about-panel {
+    width: 100%;
+    max-width: 290px;
+    justify-self: center;
+    margin-inline: auto;
+    padding: 20px 16px;
+  }
+
+  .contact-form-wrap {
+    max-width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    padding: 12px 14px;
   }
 
   .btn {

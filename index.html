@@ -89,11 +89,20 @@
         </a>
 
         <nav class="nav" aria-label="Main navigation">
-          <a href="#inicio">Home</a>
-          <a href="#servicios">Services</a>
-          <a href="#nosotros">About us</a>
-          <a href="#contacto">Contact</a>
+          <a href="#inicio" data-i18n="navHome">Home</a>
+          <a href="#servicios" data-i18n="navServices">Services</a>
+          <a href="#nosotros" data-i18n="navAbout">About us</a>
+          <a href="#contacto" data-i18n="navContact">Contact</a>
         </nav>
+
+        <div class="lang-switcher" aria-label="Language selector">
+          <button class="lang-btn is-active" type="button" data-lang="en" aria-pressed="true">
+            English
+          </button>
+          <button class="lang-btn" type="button" data-lang="es" aria-pressed="false">
+            Español
+          </button>
+        </div>
 
         <div class="header-info">
           <a href="tel:+16196060048">+1 (619) 606-0048</a>
@@ -108,24 +117,24 @@
       <section class="hero" id="inicio">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <span class="eyebrow">Serving La Jolla &amp; surrounding areas</span>
-            <h1>Professional cleaning services in La Jolla</h1>
-            <p>
+            <span class="eyebrow" data-i18n="heroEyebrow">Serving La Jolla &amp; surrounding areas</span>
+            <h1 data-i18n="heroTitle">Professional cleaning services in La Jolla</h1>
+            <p data-i18n="heroSubtitle">
               Professional cleaning services for homes and businesses, with
               bilingual service in English and Spanish.
             </p>
 
             <ul class="hero-points">
-              <li>Reliable</li>
+              <li data-i18n="heroPointReliable">Reliable</li>
               <li>·</li>
-              <li>Detailed</li>
+              <li data-i18n="heroPointDetailed">Detailed</li>
               <li>·</li>
-              <li>Trusted</li>
+              <li data-i18n="heroPointTrusted">Trusted</li>
             </ul>
 
             <div class="cta-group">
-              <a class="btn btn-primary" href="#contacto">Request a quote</a>
-              <a class="btn btn-secondary" href="#servicios">View services</a>
+              <a class="btn btn-primary" href="#contacto" data-i18n="ctaQuote">Request a quote</a>
+              <a class="btn btn-secondary" href="#servicios" data-i18n="ctaServices">View services</a>
             </div>
           </div>
         </div>
@@ -135,20 +144,20 @@
         <div class="container feature-grid">
           <article>
             <span class="icon">✓</span>
-            <h3>Quality cleaning</h3>
-            <p>Detailed cleaning to leave every corner spotless.</p>
+            <h3 data-i18n="featureTitleOne">Quality cleaning</h3>
+            <p data-i18n="featureTextOne">Detailed cleaning to leave every corner spotless.</p>
           </article>
 
           <article>
             <span class="icon">⏱</span>
-            <h3>Flexible scheduling</h3>
-            <p>Scheduling that adapts to your calendar and needs.</p>
+            <h3 data-i18n="featureTitleTwo">Flexible scheduling</h3>
+            <p data-i18n="featureTextTwo">Scheduling that adapts to your calendar and needs.</p>
           </article>
 
           <article>
             <span class="icon">🧼</span>
-            <h3>Safe products</h3>
-            <p>Effective solutions for a clean and comfortable space.</p>
+            <h3 data-i18n="featureTitleThree">Safe products</h3>
+            <p data-i18n="featureTextThree">Effective solutions for a clean and comfortable space.</p>
           </article>
         </div>
       </section>
@@ -156,40 +165,40 @@
       <section class="services" id="servicios">
         <div class="container">
           <div class="section-heading">
-            <span class="eyebrow">Our services</span>
-            <h2>Solutions for every type of space</h2>
+            <span class="eyebrow" data-i18n="servicesEyebrow">Our services</span>
+            <h2 data-i18n="servicesTitle">Solutions for every type of space</h2>
           </div>
 
           <div class="service-grid">
 
             <a class="service-card" href="#contacto" data-service="Deep cleaning">
               <div class="service-icon">🧽</div>
-              <h3>Deep cleaning</h3>
-              <p>Detailed cleaning for your entire space.</p>
+              <h3 data-i18n="serviceDeepTitle">Deep cleaning</h3>
+              <p data-i18n="serviceDeepText">Detailed cleaning for your entire space.</p>
             </a>
 
             <a class="service-card" href="#contacto" data-service="Move-In / Move-Out Cleaning">
               <div class="service-icon">📦</div>
-              <h3>Move-In / Move-Out Cleaning</h3>
-              <p>Cleaning before or after moving.</p>
+              <h3 data-i18n="serviceMoveTitle">Move-In / Move-Out Cleaning</h3>
+              <p data-i18n="serviceMoveText">Cleaning before or after moving.</p>
             </a>
 
             <a class="service-card" href="#contacto" data-service="Residential cleaning">
               <div class="service-icon">🏠</div>
-              <h3>Detailed home care</h3>
-              <p>Comprehensive cleaning services for your home.</p>
+              <h3 data-i18n="serviceHomeTitle">Detailed home care</h3>
+              <p data-i18n="serviceHomeText">Comprehensive cleaning services for your home.</p>
             </a>
 
             <a class="service-card" href="#contacto" data-service="Commercial cleaning">
               <div class="service-icon">🏢</div>
-              <h3>Commercial cleaning</h3>
-              <p>Professional cleaning for offices and businesses.</p>
+              <h3 data-i18n="serviceCommercialTitle">Commercial cleaning</h3>
+              <p data-i18n="serviceCommercialText">Professional cleaning for offices and businesses.</p>
             </a>
 
             <a class="service-card" href="#contacto" data-service="Recurring service">
               <div class="service-icon">✨</div>
-              <h3>Recurring service</h3>
-              <p>Reliable cleaning plans for a consistently fresh space.</p>
+              <h3 data-i18n="serviceRecurringTitle">Recurring service</h3>
+              <p data-i18n="serviceRecurringText">Reliable cleaning plans for a consistently fresh space.</p>
             </a>
 
           </div>
@@ -199,33 +208,33 @@
       <section class="about" id="nosotros">
         <div class="container about-grid">
           <div class="about-text">
-            <span class="eyebrow">Why choose us?</span>
-            <h2>Trust, order, and visible results.</h2>
-            <p>
+            <span class="eyebrow" data-i18n="aboutEyebrow">Why choose us?</span>
+            <h2 data-i18n="aboutTitle">Trust, order, and visible results.</h2>
+            <p data-i18n="aboutText">
               At Angel Clean Agency, we combine personal care with professional
               processes to help keep your spaces clean, organized, and
               comfortable.
             </p>
 
             <ul>
-              <li>Reliable and punctual service</li>
-              <li>Quality cleaning materials</li>
-              <li>Clear, upfront quotes</li>
-              <li>English and Spanish service</li>
+              <li data-i18n="aboutListOne">Reliable and punctual service</li>
+              <li data-i18n="aboutListTwo">Quality cleaning materials</li>
+              <li data-i18n="aboutListThree">Clear, upfront quotes</li>
+              <li data-i18n="aboutListFour">English and Spanish service</li>
             </ul>
           </div>
 
           <div class="about-panel">
             <div class="info-box">
-              <h3>Business hours</h3>
-              <p>Monday - Saturday: 8:00 a.m. - 8:00 p.m.</p>
-              <p>Sunday: By appointment</p>
+              <h3 data-i18n="hoursTitle">Business hours</h3>
+              <p data-i18n="hoursTextOne">Monday - Saturday: 8:00 a.m. - 8:00 p.m.</p>
+              <p data-i18n="hoursTextTwo">Sunday: By appointment</p>
             </div>
 
             <div class="info-box">
-              <h3>Service area</h3>
-              <p>La Jolla and surrounding areas</p>
-              <p>California, USA</p>
+              <h3 data-i18n="areaTitle">Service area</h3>
+              <p data-i18n="areaTextOne">La Jolla and surrounding areas</p>
+              <p data-i18n="areaTextTwo">California, USA</p>
             </div>
           </div>
         </div>
@@ -234,13 +243,14 @@
       <section class="contact" id="contacto">
         <div class="container contact-grid">
           <div class="contact-copy">
-            <span class="eyebrow">Contact us</span>
-            <h2>Request your no-obligation quote.</h2>
-            <p>
+            <span class="eyebrow" data-i18n="contactEyebrow">Contact us</span>
+            <h2 data-i18n="contactTitle">Request your no-obligation quote.</h2>
+            <p data-i18n="contactText">
               Tell us what you need and we will respond with a proposal
               tailored to your space.
             </p>
 
+            <p class="social-label" data-i18n="socialLabel">Visit our social media</p>
             <div class="socials" aria-label="Social media">
               <a
                 href="https://www.facebook.com/profile.php?id=61586845743064"
@@ -263,10 +273,11 @@
           <div class="contact-form-wrap">
             <form class="contact-form" id="contactForm">
               <label>
-                Name
+                <span data-i18n="formNameLabel">Name</span>
                 <input
                   type="text"
                   name="name"
+                  data-i18n-placeholder="namePlaceholder"
                   placeholder="Your name"
                   autocomplete="name"
                   required
@@ -274,10 +285,11 @@
               </label>
 
               <label>
-                Email address
+                <span data-i18n="formEmailLabel">Email address</span>
                 <input
                   type="email"
                   name="email"
+                  data-i18n-placeholder="emailPlaceholder"
                   placeholder="you@email.com"
                   autocomplete="email"
                   required
@@ -285,42 +297,43 @@
               </label>
 
               <label>
-                Service
+                <span data-i18n="formServiceLabel">Service</span>
                 <select name="service" required>
-                  <option value="">Select an option</option>
-                  <option value="Residential cleaning">
+                  <option value="" data-i18n-option="serviceOptionSelect">Select an option</option>
+                  <option value="Residential cleaning" data-i18n-option="serviceOptionResidential">
                     Residential cleaning
                   </option>
-                  <option value="Commercial cleaning">
+                  <option value="Commercial cleaning" data-i18n-option="serviceOptionCommercial">
                     Commercial cleaning
                   </option>
-                  <option value="Deep cleaning">Deep cleaning</option>
-                  <option value="Move-In / Move-Out Cleaning">
+                  <option value="Deep cleaning" data-i18n-option="serviceOptionDeep">Deep cleaning</option>
+                  <option value="Move-In / Move-Out Cleaning" data-i18n-option="serviceOptionMove">
                     Move-In / Move-Out Cleaning
                   </option>
-                  <option value="Recurring service">
+                  <option value="Recurring service" data-i18n-option="serviceOptionRecurring">
                     Recurring service
                   </option>
                 </select>
               </label>
 
               <label>
-                Message
+                <span data-i18n="formMessageLabel">Message</span>
                 <textarea
                   name="message"
                   rows="5"
+                  data-i18n-placeholder="messagePlaceholder"
                   placeholder="Tell us more about your project"
                   required
                 ></textarea>
               </label>
 
-              <button type="submit" class="btn btn-primary">Send email</button>
+              <button type="submit" class="btn btn-primary" data-i18n="formSubmit">Send email</button>
             </form>
 
             <p class="form-status" id="formStatus" aria-live="polite"></p>
 
             <div class="whatsapp-divider" aria-hidden="true">
-              <span>or send us a message directly</span>
+              <span data-i18n="whatsappDivider">or send us a message directly</span>
             </div>
 
             <a
@@ -339,7 +352,7 @@
 
     <footer class="footer">
       <div class="container footer-wrap">
-        <p>© 2026 ANGEL CLEAN AGENCY. All rights reserved.</p>
+        <p data-i18n="footerText">© 2026 ANGEL CLEAN AGENCY. All rights reserved.</p>
 
         <div class="footer-links">
           <a href="mailto:AngelCleanAgency@gmail.com">
